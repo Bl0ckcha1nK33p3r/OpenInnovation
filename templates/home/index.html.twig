@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+<section class="section-hero py-5" data-bs-theme="dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-8">
+                <h1 class="fw-bold display-5">VOS PLANS DE <span class="text-danger">CONSTRUCTION</span></h1>
+                <p class="lead">
+                    Découvrez notre vaste collection de produits à choisir pour vos plans de construction. Parcourez, explorez et obtenez un chiffrage automatique grâce à nos dernières technologies. Proposé par la communauté INNOVMEMBER.
+                </p>
+                <a href="{{ path('app_plan_new') }}" class="btn btn-lg btn-danger">
+                    Chiffrer un plan
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h1 class="mb-4">Une nouvelle manière de construire</h1>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="display-2 text-danger">
+                    <i class="fa-solid fa-tools"></i>
+                </div>
+                <h2 class="h4">Un large choix de produits.</h2>
+                <p>
+                    Découvrez notre bibliothèque de produits pour tous vos projets de construction. Avec des tarfis précis et mis à jour par nos soins.
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="display-2 text-danger">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h2 class="h4">Une rapidité sans égal.</h2>
+                <p>
+                    Nous vous proposons un chiffrage automatique de vos plans de construction en un temps record. Pour que vous puissiez avancer rapidement dans vos projets.
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="display-2 text-danger">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h2 class="h4">Meilleure technologie du marché.</h2>
+                <p>
+                   Nous utilisons l'intelligence artificielle, un outil très performant, pour que vous bénéficiez des dernières technologies pour le chiffrage de vos plans de construction.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
